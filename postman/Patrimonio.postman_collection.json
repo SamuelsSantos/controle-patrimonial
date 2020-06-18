@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "1905d957-44f4-4925-8fd9-428c64c96c2d",
+		"name": "Patrimonio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bens",
+			"item": [
+				{
+					"name": "Create Patrimonio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Computador Dell\",\n    \"descricao\": \"Descricao computador\",\n    \"marcaId\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/bens",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"bens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Patrimonio One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/bens/2",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"bens",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Patrimonio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/bens/1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"bens",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Patrimonio All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/bens",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"bens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Patrimonio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Computador Dell xxx\",\n    \"descricao\": \"Descricao computador\",\n    \"marcaId\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/bens/1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"bens",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD Patrimonio",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f982e90a-5009-4627-94f2-9a289d1af9aa",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "72f5a6cc-515e-4cef-ba87-4e95ca0e0914",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "marca",
+			"item": [
+				{
+					"name": "Create Marca",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Computadorxxxx\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/marcas",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"marcas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Marca",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Mobyx\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/marcas/4",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"marcas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find  Marca One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/marcas/1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"marcas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  Marca",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/marcas/4",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"marcas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Marca All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/marcas",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"marcas"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD Marcas",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Criar usuário",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"adm\",\n    \"email\": \"samuel@teste.com\",\n    \"password\": \"abc1mmmmmm\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/auth/signup",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login usuário",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1216691e-1c98-4325-8d07-e1b721d9564d",
+								"exec": [
+									"pm.test(\"Your test name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.environment.set(\"token\", jsonData.token);",
+									"    pm.globals.set(\"token\", jsonData.token);",
+									"    pm.expect(jsonData.token);",
+									"    pm.token = jsonData.token; ",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"adm\",\n    \"password\": \"abc1mmmmmm\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/auth/signin",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7a2051a2-f926-4df0-a897-f5ed53ac4747",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a0c7f55b-0342-4cf7-8e9b-129df220f67e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
